@@ -41,4 +41,11 @@ vm_divider = st.sidebar.radio(
     index=1,
     help="Teiler für den Vormonat (8 oder 16)."
 )
+big_rhythm_options = ["0,36", "3,6", "36", "360", "3600"]
+big_rhythm = st.sidebar.selectbox(
+    "Großer Rhythmus",
+    options=big_rhythm_options,
+    index=3,
+    help="Auswahl des großen Teilers: 0,36 / 3,6 / 36 / 360 / 3600"
+)
 
