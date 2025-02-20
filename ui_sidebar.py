@@ -8,3 +8,4 @@ def get_sidebar_inputs():
         st.session_state["start_button_pressed"] = True
 
     return {"start_button": st.session_state["start_button_pressed"]}
+ticker = st.sidebar.text_input("Wertpapier (Ticker)", "BTC-USD")
