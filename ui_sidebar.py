@@ -23,4 +23,10 @@ mode_choice = st.sidebar.radio(
     index=0,
     help="Art der gesuchten Preisprojektion."
 )
+atr_period = st.sidebar.number_input(
+    label="ATR-Periode (Tage)",
+    value=14,
+    min_value=1,
+    help="Anzahl Tage zur Berechnung der ATR (Average True Range)."
+)
 
