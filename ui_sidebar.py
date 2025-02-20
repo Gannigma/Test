@@ -17,3 +17,10 @@ analysis_date = st.sidebar.date_input(
     value=date.today(),
     help="Datum für die Analyse (z.B. aktueller Tag oder Vergangenheitsdatum)."
 )
+mode_choice = st.sidebar.radio(
+    label="Suchmodus",
+    options=["hoch", "tief"],
+    index=0,
+    help="Art der gesuchten Preisprojektion."
+)
+
