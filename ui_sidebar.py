@@ -9,3 +9,4 @@ def get_sidebar_inputs():
 
     return {"start_button": st.session_state["start_button_pressed"]}
 ticker = st.sidebar.text_input("Wertpapier (Ticker)", "BTC-USD")
+analysis_date = st.sidebar.date_input("Gesuchtes Datum", value=date.today())
