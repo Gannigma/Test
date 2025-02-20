@@ -60,4 +60,14 @@ small_div = st.sidebar.selectbox(
     index=2,
     help="Skalierter Wert basierend auf dem großen Rhythmus."
 )
-
+return {
+    "analysis_date": analysis_date,
+    "mode_choice": mode_choice,
+    "volatility": volatility,
+    "atr_period": atr_period,
+    "vj_divider": vj_divider,
+    "vm_divider": vm_divider,
+    "big_rhythm": big_rhythm,
+    "small_div": small_div,
+    "start_button": st.session_state["start_button_pressed"]
+}
