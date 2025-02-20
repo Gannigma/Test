@@ -29,4 +29,16 @@ atr_period = st.sidebar.number_input(
     min_value=1,
     help="Anzahl Tage zur Berechnung der ATR (Average True Range)."
 )
+vj_divider = st.sidebar.radio(
+    label="Teiler Vorjahr",
+    options=[8, 16],
+    index=1,
+    help="Teiler für das Vorjahr (8 oder 16)."
+)
+vm_divider = st.sidebar.radio(
+    label="Teiler Vormonat",
+    options=[8, 16],
+    index=1,
+    help="Teiler für den Vormonat (8 oder 16)."
+)
 
