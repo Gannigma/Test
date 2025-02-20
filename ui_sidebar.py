@@ -48,4 +48,16 @@ big_rhythm = st.sidebar.selectbox(
     index=3,
     help="Auswahl des großen Teilers: 0,36 / 3,6 / 36 / 360 / 3600"
 )
+BASE_SMALL_DIVS = [180.0, 90.0, 45.0, 22.5, 11.25, 5.625]
+try:
+    factor = float(big_rhythm.replace(',', '.')) / 360.0
+except:
+    factor = 1.0
+scaled_divs = [round(d * factor, 4) for d in BASE_SMALL_DIVS]
+small_div = st.sidebar.selectbox(
+    "Kleiner Teiler",
+    options=scaled_divs,
+    index=2,
+    help="Skalierter Wert basierend auf dem großen Rhythmus."
+)
 
